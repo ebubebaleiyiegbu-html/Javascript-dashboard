@@ -1,0 +1,109 @@
+body {
+      background-color: #f8f5f0;
+      font-family: Arial, sans-serif;
+    }
+    .sidebar {
+      background-color: #111111;
+      min-height: 100vh;
+      padding: 20px 0;
+      color: white;
+      border-radius: 2%;
+    }
+    .sidebar .nav-link {
+      color: #ccc;
+      font-weight: 500;
+      padding: 12px 20px;
+    }
+    .sidebar .nav-link.active {
+      background-color: #e9f4ee;
+      color: #000;
+      border-radius: 8px;
+    }
+    .sidebar h2 {
+      color: white;
+      font-size: 22px;
+      margin-left: 20px;
+      margin-bottom: 30px;
+    }
+    .card {
+      border: none;
+      border-radius: 12px;
+      padding: 15px;
+    }
+    .card-dark {
+      background-color: #1e1e1e;
+      color: white;
+    }
+
+    .dollar{
+      padding: 20px;
+      background-color: #ebcdad;
+      width: 30%;
+      border-radius: 15px;
+    }
+
+    .budget-ring {
+        width: 120px;
+        height: 120px;
+        border: 12px solid #a3d3d3;
+        border-top-color: #f5c99b;
+        border-right-color: #776f82;
+        border-bottom-color: #6dc2c2;
+        border-radius: 50%;
+    }
+
+    
+
+    .d-block-1{
+        padding: 15px;
+        border-left: 5px solid;
+        border-color: rgb(21, 80, 21);
+    }
+
+    .d-block-2{
+        padding: 15px;
+        border-left: 5px solid;
+        border-color: rgb(42, 166, 214);
+    }
+
+    .d-block-3{
+        padding: 15px;
+        border-left: 5px;
+        border-color: #000;
+    }
+
+    .d-block-4{
+        padding: 15px;
+        border-left: 5px;
+        border-color: wheat;
+    }
+
+    .transaction-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 0;
+      border-bottom: 1px solid #eee;
+    }
+    .transaction-item:last-child {
+      border-bottom: none;
+    }
+    .transaction-user {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .transaction-user img {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+    }
+    .amount {
+      font-weight: bold;
+    }
+    .amount.plus {
+      color: green;
+    }
+    .amount.minus {
+      color: red;
+    }
