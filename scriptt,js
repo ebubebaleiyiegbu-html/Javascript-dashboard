@@ -1,0 +1,179 @@
+debugger;
+var number = 5; // in-line comment
+
+//initialize these three variables
+var a = 5;
+var b = 10;
+var c = "i am a"
+
+// do not change code below this line
+
+a = a + 1;
+b = b + 5;
+c = c + "string"
+
+// multiplication
+var product = 8 * 10;
+console.log(product);
+
+// incrementing numbers
+var myVar = 87;
+
+//only change code below this line
+myVar = myVar - 1; //or myVar++;
+
+
+//decinal numbers
+var ourDecimal = 4.4
+
+//division
+var quotient = 4.4 / 2.0;
+
+//finding a remainder
+var remainder;
+
+// finding the lenght of a character
+var firstNameLength = 0;
+var firstName = "Ebubechukwu";
+firstNameLength = firstName.length;
+console.log(firstNamelenght);
+
+// bracket notation to find First character in string
+var lastNameLength = "";
+var lastName = "Chukwuebuka";
+
+firstLetterOfLastName = Lastname(1);
+console.log(firstLetterOfLastName);
+
+// string immutability means it cannot be altered when declared
+var myStr = "jello world";
+myStr = "Helo world"; //correct way to change a string
+
+//bracket notation to find the nth character in a string
+var thirsdLetterOfLastName = lastname(2);
+console.log(thirdLetterOfLastName);
+
+// word blanks
+var myNoun = "cat";
+var myAdjective = "big";
+var myVerb = "caught";
+var myAdverb = "quickly";
+
+var wordBlanks = "The " + myAdjective + " " + myNoun + " " + myVerb + " " + myAdverb; //change this line
+console.log(wordBlanks);
+
+            //or
+function wordBlanks(myNoun, myAdjective, myVerb, myAdverb,) {
+    var result = "";
+    result += "The" + myAdjectives + " " + myNoun + " " + myVerb + "was" + "" + myAdverb;
+    return result;
+    console.log(wordBlanks("cat", "big", "caught", "qucikly")); // 
+}
+
+// array declaration
+var myArray = [18, 64, 99];
+myArray[0] = 60;
+console.log(myArray);// outputs [60, 64, 99]
+
+// multi-dimensional array
+var myArray = [[1, 2, 3], [4, 5, 6], [7, 8, 9], [[10, 11, 12], 13, 14]];
+var myData = myArray[2][1];
+console.log(myData);// outputs 8
+
+//push-method to add items to an array
+var myArray = [["bulls", 23], ["Dog", 3]];
+myArray.push(["cat", 2]); // adds ["cat", 2] to the end of the array
+
+// manipulate array with pop-method
+var myArray = [["John", 23], ["cat", 2]];
+var removedFromMyArray = myArray.pop(); // removes the last element from an array
+
+//manupulate array with shift-method
+var myArray = [["Bulls", 23], ["cat", 2]];
+var removedFromMyArray = myArray.shift(); // removes the first element from an array
+
+// manipulate array with unshift-method
+var myArray = [["lakers", 24], ["rat", 2]];
+myArray.shift()
+myArray.unshift["kobe", 24]; // adds ["kobe", 24] to the beginning of the array
+
+// shopping list
+var myList = [[backy, 5], [eggs, 12], [milk, 1], [Bread, 2], [juice, 1]]; // each sub-array has two elements
+
+// reusable function
+function myReusableFunction() {
+    console.log("Hi there, Ebubechukwu");
+}
+
+// passing values to function with augments
+function myFunctionWithArgs(a, b){
+    console.log(a - b);
+}
+myFunctionWithArgs(10, 5) //outputs = 5
+
+function myFunctionWithArgs(a, b) {
+    console.log(a + b);
+}
+myFunctionWithArgs(10, 5); //outputs + 15
+
+// global scopes and functions***
+var myGlobal = 10;
+
+
+// global vs local scope funsctio
+var outerWear = "T-shirt"; // global vairable
+
+function myOutfit() {
+    var outerWear = "sweater"; // locial variable
+    return outerWear
+}
+console.log(myOutfit()); // outputs sweater
+console.log(outerWear); // outputs T-shirt
+
+// return a value from a function with return
+function minusTen(num) {
+    return num -10
+}
+console.log(minusTen(20)); //outputs 10
+
+function minusFifty(num) {
+    return num -30
+}
+console.log (minustFifty(10)); //outputs -20
+
+// assignment with a returned value
+var changed = 0;
+function change(num) {
+    return (num + 5) /3;// changed is 5
+}
+changed = change(10); // changed now equals 5
+
+// stand in line***
+ function nextInLine(arr, item) { // add the item to the end of the array
+    arr.push(item); // adds the item to the end of the array
+    return arr.shift(); // returns the first item in the array
+ }
+var testArr = [1, 2, 3, 4, 5]; // testArr is [1, 2, 3, 4, 5]
+
+console.log("Before: " + JSON.stringify(testArr)); // outputs [1, 2, 3, 4, 5]
+console.log(nextInLine(testArr, 6)); // outputs 1
+console.log("After: " + JSON.stringify(testArr)); // outputs [2, 3, 4, 5, 6]
+
+// boolean values
+function welcomeToBooleans() {
+    return true; // change this line
+}
+console.log(welcomeToBooleans()); // outputs true
+
+// if statements
+function myTrueOrFalse(isitTrue) {
+    if (isitTrue) {
+        return "yes, it's true";
+    }
+}
+    
+    // gradecard
+    function getGrade(score) {
+        var grade;
+    }
+
